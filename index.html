@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GSAP Scroll Animation Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <main class="main page__main">
+    <section class="intro-section">
+      <div>
+        <h1>Прокрутите вниз</h1>
+        <p>Чтобы увидеть анимацию</p>
+      </div>
+    </section>
+    <section class="fade-section main__section">
+      <div class="fade-section__content fade-section__content_left">
+        <h2 class="fade-section__title">Прокрутите вниз ещё раз</h2>
+        <p class="fade-section__text">
+          Эта анимация появляется при скролле.
+          Реализовано с помощью GSAP и ScrollTrigger.
+        </p>
+      </div>
+      <div class="fade-section__image fade-section__image_right">
+        <img src="./assets/image.jpg" alt="Изображение базы отдыха" />
+      </div>
+    </section>
+
+    <!-- Пустое пространство для скролла -->
+    <div style="height: 100vh;"></div>
+
+    <section class="fade-section main__section">
+      <div class="fade-section__content fade-section__content_right">
+        <h2 class="fade-section__title">Ещё одна анимация</h2>
+        <p class="fade-section__text">
+          Вторая секция с обратной анимацией.
+        </p>
+      </div>
+      <div class="fade-section__image fade-section__image_left">
+        <img src="./assets/image.jpg" alt="Изображение базы отдыха" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Подключаем GSAP -->
+  <script src="gsap.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
